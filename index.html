@@ -5,14 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Count Down Timer</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        /* Add CSS for the floating info */
+        .floating-info {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        /* Add CSS for the styled input */
+        #countdownDate {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="floating-info">
+        The date format is DD MMM YYYY (e.g., 1 Nov 2025)
+    </div>
 
+    <h1 id="countdownTitleText">New Year Eve</h1>
 
+    <input type="text" id="countdownTitle">
 
+    <input type="text" id="countdownDate">
 
-    <h1>New Year Eve</h1>
+    <button id="startButton">Start Countdown</button>
 
     <div class="countdown-container">
     
@@ -41,7 +68,6 @@
         </div>
 
     </div>
-
 
     <script src="./super.js"></script>
 </body>
