@@ -9,7 +9,36 @@ body{
     margin: 0;
     background-image: url('./snow.jpg');
     min-height: 100vh;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+}
 
+h1{
+    font-size: 4rem;
+    margin-top: -10rem;
+    font-weight: normal;
+}
+
+.countdown-container{
+    display: flex;
+}
+
+.big-text{
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bold;
+}
+
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span{
+    font-size: 1.5rem;
 }
