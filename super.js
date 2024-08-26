@@ -19,6 +19,8 @@ startButton_b.addEventListener('click',() => {
     defaultCountdownDate = countdownDate_i.value 
     document.getElementById('countdownTitleText').innerHTML = countdownTitle_i.value 
     startButton_b.disabled = true;
+    countdownDate_i.style.display = 'none';
+    countdownTitle_i.style.display = 'none';
     countDown();
  });
 
